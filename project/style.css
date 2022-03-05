@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+}
+h1{
+    font-weight:lighter;
+}
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+nav{
+    width: 40vw;
+    font-size:x-large;
+    margin-top: 10px;
+}
+.bigimage{
+    margin: 1rem;
+    width: 95vw;
+}
+.container{
+    display: flex;
+    margin-top: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container>div{
+    text-align: center;
+}
+.container>div>p{
+    font-size: x-large;
+    margin: 20px;
+}
+footer{
+    background-color: black;
+
+}
