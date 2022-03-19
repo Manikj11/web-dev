@@ -20,4 +20,11 @@ let avengers={
     }
 
 }
+console.log(avengers.address.city)
+avengers.sayhi()
+//adding new  key 
+avengers.movies=['avengers','civil war','captain america']
+
+//delete key
+delete avengers.friends
 console.log(avengers)
