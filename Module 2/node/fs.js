@@ -20,3 +20,16 @@ console.log("after update: "+ fs.readFileSync(filePath,'utf-8') )
 
 //delete --D
 fs.unlinkSync(filePath);
+
+//create a directory, read, delete using fs 
+
+
+fs.mkdir("./new-directory-name", function(err) {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log("New directory successfully created.")
+  }
+})
+dir= 'D:/FJP-6/Module 2/node/new-directory-name'
+fs.rmdirSync(dir)
