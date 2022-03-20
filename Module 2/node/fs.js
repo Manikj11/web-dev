@@ -23,13 +23,26 @@ fs.unlinkSync(filePath);
 
 //create a directory, read, delete using fs 
 
+//check if dir exist or not 
+dir= 'D:/FJP-6/Module 2/node/newDirectory'
+if( !fs.existsSync(dir) ){
+  fs.mkdirSync("newDirectory"); //because it gives error when dir already exists
+}
+//Read a directory
+let folderpath ="D:/FJP-6/Module 1";
+let contentoffolder = fs.readdirSync(folderpath);
+console.log(contentoffolder);
 
-fs.mkdir("./new-directory-name", function(err) {
-  if (err) {
-    console.log(err)
-  } else {
-    console.log("New directory successfully created.")
-  }
-})
-dir= 'D:/FJP-6/Module 2/node/new-directory-name'
-fs.rmdirSync(dir)
+//Delete a directory
+fs.rmdirSync(dir);
+
+//copy a file
+
+let sourcePath = path.join(__dirname,"file.txt");
+let destPath= path.join(__dirname,"module","file.txt")
+
+console.log(sourcePath)
+console.log(destPath)
+fs.copyFileSync(sourcePath,destPath);
+
+
